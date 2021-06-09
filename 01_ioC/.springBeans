@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.3.201803200843-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/ioC1.xml</config>
+		<config>src/main/resources/ioC4.xml</config>
+		<config>src/main/resources/ioc5.xml</config>
+		<config>src/main/resources/magic.xml</config>
+		<config>src/main/resources/emp.xml</config>
+		<config>src/main/resources/app-context.xml</config>
+		<config>src/main/resources/app-context2.xml</config>
+		<config>src/main/resources/app-context6.xml</config>
+		<config>src/main/resources/app-context6-parent.xml</config>
+		<config>src/main/resources/app-context7.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

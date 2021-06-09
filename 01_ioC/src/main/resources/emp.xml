@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+	<bean class="com.capriberry.emp.Programmer" id="programmer1">
+		<property name="name">
+			<value> 지연우 개발자 </value>
+		</property>
+		<property name="work" value="자바 프로그래밍"></property>
+	</bean>
+	<bean class="com.capriberry.emp.Programmer" id="programmer2" p:name="구본희 개발자" p:work="jsp 프로그래밍"/>
+	<bean class="com.capriberry.emp.Designer" id="designer" p:name="박종민 디자이너" p:work="포토샵"/>
+	
+	<util:list value-type="com.capriberry.emp.Emp" id="emps" list-class="java.util.ArrayList">
+		<ref bean="programmer1"/>
+		<ref bean="programmer2"/>
+		<ref bean="designer"/>
+		
+	</util:list>
+	
+	
+	
+</beans>

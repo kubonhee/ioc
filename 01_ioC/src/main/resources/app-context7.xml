@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.capriberry.inject7.Person" id="person">
+		<property name="name" value="지본희"/>
+	</bean>
+	
+	<bean class="com.capriberry.inject7.App" id="app">
+		<property name="map">
+			<map>
+				<entry key="someBalue" value="hello map..."/>
+				<entry key="someBean" value-ref="person"/>
+				<entry key="someBean2" value="person"/>
+			</map>
+		</property>
+		
+		<property name="set">
+			<set>
+				<value>강 벨류</value>
+				<ref bean="person"/>
+			</set>
+		</property>
+		<property name="properties">
+			<props>
+				<prop key="내가 키">내가 값</prop>
+				<prop key="lastName">Ku</prop>
+				<prop key="firstName">BonHee</prop>
+			</props>
+		</property>
+	</bean>
+	
+</beans>
